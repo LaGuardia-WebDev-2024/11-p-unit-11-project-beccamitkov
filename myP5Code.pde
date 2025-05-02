@@ -12,7 +12,61 @@ setup = function() {
    
    fill(255,255,255);
    rect(-10, 300, 610, 150);
+   
+ var myAnimals=  ["Penguin", "Duck", "Unicorn", "Elephant", "Monkey"];
+ var myAnimalsemojis=  ["🐧", "🦆", "🦄", "🐘", "🐒"];
+ var myAnimalsColor = [color(200,0,0),color(0,200,0), color (0,0,200)];
+ 
+ fill(0,0,0);
+ text("I have " + myAnimals.length + " favorite animals!", 10, 50);
+ 
+ fill(myAnimalsColor[0]);
+ text(myAnimals[0], 10, 100);
+  text(myAnimalsemojis[0], 210, 100);
+ 
+ fill(myAnimalsColor[1]);
+ text(myAnimals[1], 10, 150);
+ text(myAnimalsemojis[1], 210, 150);
+ 
+ fill(myAnimalsColor[2]);
+ text(myAnimals[2], 10, 200);
+ text(myAnimalsemojis[2], 210, 200);
+ 
+ fill(myAnimalsColor[3]);
+ text(myAnimals[3], 10, 250)
+ text(myAnimalsemojis[3], 210, 245);
+ 
+ fill(myAnimalsColor[4]);
+ text(myAnimals[4], 10, 300)
+ text(myAnimalsemojis[4], 210, 293);
 
+//Example Function Call
+drawFish(200, 200, color(200,0,0));
+
+var x = 0;
+while(x<400){
+text("🌸", x, 340);
+x += 20;
 }
+
+
+};
+
+//Function Definition
+var drawFish = function(fishX, fishY, fishColor){
+  fill(fishColor);
+  strokeWeight(1);
+  stroke(0,0,0);
+  ellipse(fishX+20,fishY,13,25); //tail
+  ellipse(fishX,fishY,40,20); //body
+  fill(0,0,0);
+  ellipse(fishX-10,fishY-2, 3 ,5); //eye
+  fill(226, 90, 76 );
+  ellipse(fishX-12,fishY+4,10,3); //mouth
+};
+
+
+
+
 
 
