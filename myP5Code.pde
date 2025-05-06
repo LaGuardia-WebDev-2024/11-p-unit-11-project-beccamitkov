@@ -1,6 +1,6 @@
 var snowX = [100, 120, 160, 200];
 var snowY = [50, 70, 40, 20];
-
+var unicorn=loadImage("https://cdn.glitch.global/e50ff96c-25c9-48de-a81d-b9bcc1ecfced/7b1077cc-fb4b-4f96-bfd6-2c107bbfd961.image.png?v=1746558952060")
 setup = function() {
    size(600, 450); 
    background(164, 212, 255);
@@ -67,6 +67,8 @@ var drawFish = function(fishX, fishY, fishColor){
 
 
 
-
+draw=function(){
+image( unicorn,20, 150, 75, 80)
+}
 
 
